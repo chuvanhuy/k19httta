@@ -14,7 +14,7 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-<link href="../main.87c0748b313a1dda75f5.css" rel="stylesheet"></head>
+<link href="<?=base_url();?>main.87c0748b313a1dda75f5.css" rel="stylesheet"></head>
 <body>
 <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
     <div class="app-header header-shadow">
@@ -369,42 +369,42 @@
                                                                         <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/1.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/1.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/2.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/2.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/3.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/3.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/4.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/4.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/5.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/5.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/9.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/9.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/7.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/7.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                 <div class="avatar-icon"><img
-                                                                                        src="assets/images/avatars/8.jpg"
+                                                                                        src="<?=base_url();?>assets/images/avatars/8.jpg"
                                                                                         alt=""></div>
                                                                             </div>
                                                                             <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -652,7 +652,7 @@
                             <div class="widget-content-left">
                                 <div class="btn-group">
                                     <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                        <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                        <img width="42" class="rounded-circle" src="<?=base_url();?>assets/images/avatars/1.jpg" alt="">
                                         <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                     </a>
                                     <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu-lg dropdown-menu dropdown-menu-right">
@@ -664,7 +664,7 @@
                                                         <div class="widget-content-wrapper">
                                                             <div class="widget-content-left mr-3">
                                                                 <img width="42" class="rounded-circle"
-                                                                     src="assets/images/avatars/1.jpg"
+                                                                     src="<?=base_url();?>assets/images/avatars/1.jpg"
                                                                      alt="">
                                                             </div>
                                                             <div class="widget-content-left">
@@ -1075,52 +1075,52 @@
                                 </div>
                                 <div class="swatch-holder swatch-holder-img active">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/city1.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/city1.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/city2.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/city2.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/city3.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/city3.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/city4.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/city4.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/city5.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/city5.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/abstract1.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/abstract1.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/abstract2.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/abstract2.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/abstract3.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/abstract3.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/abstract4.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/abstract4.jpg">
                                     </a>
                                 </div>
                                 <div class="swatch-holder swatch-holder-img">
                                     <a class="img-holder switch-trigger">
-                                        <img alt=" " src="assets/images/sidebar/abstract5.jpg">
+                                        <img alt=" " src="<?=base_url();?>assets/images/sidebar/abstract5.jpg">
                                     </a>
                                 </div>
                             </li>-->
@@ -1281,7 +1281,7 @@
                                 </div>
                             </div>
                             <div class="page-title-actions">
-                                <a href="./quan_tri_tin_tuc/them_moi_tin_tuc">
+                                <a href="<?=base_url();?>admin/quan_tri_tin_tuc/them_moi_tin_tuc">
                                 <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
                                     <span class="ladda-label">Thêm mới
                                     </span>
@@ -1306,7 +1306,8 @@
                                 <div class="d-none d-md-block col-6 text-muted">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-3">Số lượt đọc</div>
-                                        <div class="col-9">Người cập nhật tin</div>
+                                        <div class="col-6">Người cập nhật tin</div>
+                                        <div class="col-3">Thao tác</div>
                                     </div>
                                 </div>
                             </div>
@@ -1321,12 +1322,32 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-3"><?=$row1->so_luot_doc;?></div>
                                         <div class="media col-6 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="../assets/images/<?=$row1->anh_minh_hoa;?>" alt="" class="d-block ui-w-30 rounded-circle">
+                                            <img style="width: 40px; height: auto;" src="<?=base_url();?>/assets/images/<?=$row1->anh_minh_hoa;?>" alt="" class="d-block ui-w-30 rounded-circle">
                                             <div class="media-body flex-truncate ml-2">
                                                 <a href="javascript:void(0)" class="d-block text-truncate"><?=$row1->tac_gia;?></a>
                                                 <div class="text-muted small text-truncate"><?=$row1->ngay_dang;?></div>
                                             </div>
-                                        </div>
+                                        </div>                                        
+                                        <div class="col-3">
+                                            <a href="<?=base_url();?>admin/quan_tri_tin_tuc/sua/<?=$row1->id;?>">
+                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
+                                                <span class="ladda-label">Sửa
+                                                </span>
+                                                <span class="ladda-spinner">
+                                                </span>
+                                                <div class="ladda-progress" style="width: 0px;"></div>
+                                            </button>
+                                            </a>
+                                            <a href="<?=base_url();?>admin/quan_tri_tin_tuc/xoa/<?=$row1->id;?>">
+                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
+                                                <span class="ladda-label">Xóa
+                                                </span>
+                                                <span class="ladda-spinner">
+                                                </span>
+                                                <div class="ladda-progress" style="width: 0px;"></div>
+                                            </button>
+                                            </a>
+                                        </div>    
                                     </div>        
                                 </div>
                             </div>        
@@ -1343,7 +1364,8 @@
                                 <div class="d-none d-md-block col-6 text-muted">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-3">Số lượt đọc</div>
-                                        <div class="col-9">Người cập nhật tin</div>
+                                        <div class="col-6">Người cập nhật tin</div>
+                                        <div class="col-3">Thao tác</div>
                                     </div>
                                 </div>
                             </div>
@@ -1359,12 +1381,32 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-3"><?=$row2->so_luot_doc;?></div>
                                         <div class="media col-6 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="../assets/images/<?=$row2->anh_minh_hoa;?>" alt="" class="d-block ui-w-30 rounded-circle">
+                                            <img style="width: 40px; height: auto;" src="<?=base_url();?>assets/images/<?=$row2->anh_minh_hoa;?>" alt="" class="d-block ui-w-30 rounded-circle">
                                             <div class="media-body flex-truncate ml-2">
                                                 <a href="javascript:void(0)" class="d-block text-truncate"><?=$row2->tac_gia;?></a>
                                                 <div class="text-muted small text-truncate"><?=$row2->ngay_dang;?></div>
                                             </div>
-                                        </div>
+                                        </div>                   
+                                        <div class="col-3">
+                                            <a href="<?=base_url();?>admin/quan_tri_tin_tuc/sua/<?=$row2->id;?>">
+                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
+                                                <span class="ladda-label">Sửa
+                                                </span>
+                                                <span class="ladda-spinner">
+                                                </span>
+                                                <div class="ladda-progress" style="width: 0px;"></div>
+                                            </button>
+                                            </a>
+                                            <a href="<?=base_url();?>admin/quan_tri_tin_tuc/xoa/<?=$row2->id;?>">
+                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
+                                                <span class="ladda-label">Xóa
+                                                </span>
+                                                <span class="ladda-spinner">
+                                                </span>
+                                                <div class="ladda-progress" style="width: 0px;"></div>
+                                            </button>
+                                            </a>
+                                        </div>    
                                     </div>    
                                 </div>
                             </div>        
@@ -1446,42 +1488,42 @@
                                                                                         <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/1.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/1.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/2.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/2.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/3.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/3.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/4.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/4.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/5.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/5.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/9.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/9.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/7.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/7.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                                                                 <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/8.jpg"
+                                                                                                        src="<?=base_url();?>assets/images/avatars/8.jpg"
                                                                                                         alt=""></div>
                                                                                             </div>
                                                                                             <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -2061,7 +2103,7 @@
                                             <label class="custom-control-label" for="exampleCustomCheckbox2444">&nbsp;</label></div>
                                     </div>
                                     <div class="widget-content-left mr-3">
-                                        <div class="widget-content-left"><img width="42" class="rounded" src="assets/images/avatars/1.jpg" alt=""/></div>
+                                        <div class="widget-content-left"><img width="42" class="rounded" src="<?=base_url();?>assets/images/avatars/1.jpg" alt=""/></div>
                                     </div>
                                     <div class="widget-content-left">
                                         <div class="widget-heading">Go grocery shopping</div>
@@ -2140,42 +2182,42 @@
                                         <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/1.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/1.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/2.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/2.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/3.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/3.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/4.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/4.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/5.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/5.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/6.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/6.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/7.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/7.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm">
                                                 <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/8.jpg"
+                                                        src="<?=base_url();?>assets/images/avatars/8.jpg"
                                                         alt=""></div>
                                             </div>
                                             <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
@@ -2202,5 +2244,5 @@
         </div>
     </div>
 </div>
-<div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="../assets/scripts/main.87c0748b313a1dda75f5.js"></script></body>
+<div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="<?=base_url();?>/assets/scripts/main.87c0748b313a1dda75f5.js"></script></body>
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Thêm mới tin tức | K19HTTTA</title>
+    <title>Sửa tin tức | K19HTTTA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
     />
     <meta name="description" content="Build whatever layout you need with our Architect framework.">
@@ -1276,24 +1276,31 @@
                     <div class="app-page-title">
                         <div class="page-title-wrapper">
                             <div class="main-card mb-12 card">
-                                <div class="card-body"><h5 class="card-title">THÊM MỚI TIN TỨC</h5>
+                                <div class="card-body"><h5 class="card-title">SỬA TIN TỨC</h5>
                                     <div>
-                                    <form method="POST" action="<?=base_url().'admin/quan_tri_tin_tuc/thuc_hien_them_moi_tin_tuc';?>">
+                                    <form method="POST" action="<?=base_url().'admin/quan_tri_tin_tuc/thuc_hien_sua_tin_tuc';?>">
                                         <div class="position-relative row form-group"><label for="exampleEmail" class="col-sm-4 col-form-label">Tiêu đề</label>
-                                            <div class="col-sm-8"><input name="txtTieuDe" class="form-control"></div>
+                                            <div class="col-sm-8">
+                                                <input name="txtTieuDe" class="form-control" value="<?=$tin_tuc->tieu_de;?>">
+                                            </div>
                                         </div>
 
                                         <div class="position-relative row form-group"><label for="exampleEmail" class="col-sm-4 col-form-label">Mô tả</label>
-                                            <div class="col-sm-8"><input name="txtMoTa" class="form-control"></div>
+                                            <div class="col-sm-8">
+                                                <input name="txtMoTa" class="form-control" value="<?=$tin_tuc->mo_ta;?>">
+                                            </div>
                                         </div>
 
                                         <div class="position-relative row form-group"><label for="exampleEmail" class="col-sm-4 col-form-label">Nội dung</label>
-                                            <div class="col-sm-8"><input name="txtNoiDung" class="form-control"></div>
+                                            <div class="col-sm-8">
+                                                <input name="txtNoiDung" class="form-control" value="<?=$tin_tuc->noi_dung;?>">
+                                            </div>
                                         </div>
 
                                         <div class="position-relative row form-check">
                                             <div class="col-sm-10 offset-sm-2">
                                                 <button class="btn btn-secondary">Submit</button>
+                                                <input name="txtID" type="hidden" value="<?=$tin_tuc->id;?>">
                                             </div>
                                         </div>
                                     </form>
