@@ -56,20 +56,25 @@
                                 <span>Vui lòng đăng nhập hệ thống.</span></h4>
                             <div class="divider row"></div>
                             <div>
-                                <form class="">
+                                <form method="POST" action="<?=base_url();?>admin/dang_nhap/kiem_tra_dang_nhap">
                                     <div class="form-row">
                                         <div class="col-md-6">
-                                            <div class="position-relative form-group"><label for="exampleEmail" class="">Email</label><input name="email" id="exampleEmail" placeholder="Nhập Email..." type="email" class="form-control"></div>
+                                            <div class="position-relative form-group">
+                                                <label for="exampleEmail" class="">Email</label>
+                                                <input name="txtEmail" placeholder="Nhập Email..." type="email" class="form-control">
+                                            </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="position-relative form-group"><label for="examplePassword" class="">Mật khẩu</label><input name="password" id="examplePassword" placeholder="Nhập mật khẩu..." type="password"
-                                                                                                                                                   class="form-control"></div>
+                                            <div class="position-relative form-group">
+                                                <label for="examplePassword" class="">Mật khẩu</label>
+                                                <input name="txtPassword" placeholder="Nhập mật khẩu..." type="password">
                                         </div>
                                     </div>
                                     <div class="divider row"></div>
                                     <div class="d-flex align-items-center">
-                                        <div class="ml-auto"><a href="./quen_mat_khau.html" class="btn-lg btn btn-link">Quên mật khẩu</a>
-                                            <button class="btn btn-primary btn-lg">Đăng nhập</button>
+                                        <div class="ml-auto">
+                                            <a href="./quen_mat_khau.html" class="btn-lg btn btn-link">Quên mật khẩu</a>
+                                            <input type="submit" value="Đăng nhập">
                                         </div>
                                     </div>
                                 </form>
@@ -80,5 +85,6 @@
             </div>
         </div>
 </div>
-<script type="text/javascript" src="../assets/scripts/main.87c0748b313a1dda75f5.js"></script></body>
+<script type="text/javascript" src="../assets/scripts/main.87c0748b313a1dda75f5.js"></script>
+</body>
 </html>

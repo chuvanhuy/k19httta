@@ -2,8 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Quan_tri_tin_tuc extends CI_Controller {
-	public function index()
+	function __construct()
 	{
+		parent::__construct();
+
 		// Load thư viện URL
 		$this->load->helper('url');
 
@@ -13,6 +15,16 @@ class Quan_tri_tin_tuc extends CI_Controller {
 		// Kết nối đến MODEL
 		$this->load->model('m_tin_tuc');
 
+		// Load thư viện session
+		$this->load->library('session');
+
+		if ($this->session->userdata('email')=="") {
+			redirect(base_url()."admin/dang_nhap.html");
+		}
+	}
+
+	public function index()
+	{
 		// Lấy kết quả tin tức sự kiện qua MODEL
 		$data['tin_su_kien'] = $this->m_tin_tuc->lay_tin_tuc_theo_loai_tin(1);
 
@@ -27,9 +39,6 @@ class Quan_tri_tin_tuc extends CI_Controller {
 	// Hàm này có tác dụng LOAD ra form nhập liệu
 	public function them_moi_tin_tuc()
 	{
-		// Load thư viện URL
-		$this->load->helper('url');
-	
 		// Hiển thị dữ liệu ra view
 		$this->load->view('admin/v_tin_tuc_them_moi');
 	}
@@ -38,15 +47,6 @@ class Quan_tri_tin_tuc extends CI_Controller {
 	// Hàm này có tác dụng thực hiện thêm mới tin tức vào CSDL
 	public function thuc_hien_them_moi_tin_tuc()
 	{
-		// Kết nối đến CSDL
-		$this->load->database();
-
-		// Load thư viện URL
-		$this->load->helper('url');
-
-		// Kết nối đến MODEL
-		$this->load->model('m_tin_tuc');
-
 		// Thêm mới tin tức thông qua qua MODEL
 		$this->m_tin_tuc->them_moi_tin_tuc();
 	
@@ -57,15 +57,6 @@ class Quan_tri_tin_tuc extends CI_Controller {
 	// Hàm này có tác dụng LOAD tin tức có ID cụ thể ra form để sửa thông tin
 	public function sua()
 	{
-		// Load thư viện URL
-		$this->load->helper('url');
-
-		// Kết nối đến CSDL
-		$this->load->database();
-
-		// Kết nối đến MODEL
-		$this->load->model('m_tin_tuc');
-
 		// Lấy ra ID của tin tức cần cập nhật
 		$id = $this->uri->segment(4);
 
@@ -80,15 +71,6 @@ class Quan_tri_tin_tuc extends CI_Controller {
 	// Hàm này có tác dụng thực hiện sửa tin tức, cập nhật vào CSDL
 	public function thuc_hien_sua_tin_tuc()
 	{
-		// Kết nối đến CSDL
-		$this->load->database();
-
-		// Load thư viện URL
-		$this->load->helper('url');
-
-		// Kết nối đến MODEL
-		$this->load->model('m_tin_tuc');
-
 		// Sửa tin tức thông qua MODEL
 		$this->m_tin_tuc->sua_tin_tuc();
 	
@@ -99,15 +81,6 @@ class Quan_tri_tin_tuc extends CI_Controller {
 	// Hàm này có tác dụng xóa tin tức
 	public function xoa()
 	{
-		// Load thư viện URL
-		$this->load->helper('url');
-
-		// Kết nối đến CSDL
-		$this->load->database();
-
-		// Kết nối đến MODEL
-		$this->load->model('m_tin_tuc');
-
 		// Lấy ra ID của tin tức cần xóa
 		$id = $this->uri->segment(4);
 
