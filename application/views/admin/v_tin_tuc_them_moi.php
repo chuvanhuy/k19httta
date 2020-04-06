@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Quản trị tin tức | K19HTTTB</title>
+    <title>Thêm mới tin tức | K19HTTTA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"
     />
-    <meta name="description" content="Example layout page for forum listing">
+    <meta name="description" content="Build whatever layout you need with our Architect framework.">
 
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
-<link href="../main.87c0748b313a1dda75f5.css" rel="stylesheet"></head>
+<link href="<?=base_url();?>main.87c0748b313a1dda75f5.css" rel="stylesheet"></head>
 <body>
 <div class="app-container app-theme-white body-tabs-shadow fixed-header fixed-sidebar">
     <div class="app-header header-shadow">
@@ -1235,7 +1235,7 @@
                             </span>
                         </button>
                     </span>
-                </div>    <div class="scrollbar-sidebar">
+                 </div>    <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
                         <ul class="vertical-nav-menu">
                             <li class="app-sidebar__heading">Menu</li>
@@ -1274,105 +1274,79 @@
                 <div class="app-main__inner">
                     <div class="app-page-title">
                         <div class="page-title-wrapper">
-                            <div class="page-title-heading">
-                                <div class="page-title-icon">
-                                    <i class="pe-7s-power icon-gradient bg-mixed-hopes">
-                                    </i>
-                                </div>
-                            </div>
-                            <div class="page-title-actions">
-                                <a href="./quan_tri_tin_tuc/them_moi_tin_tuc">
-                                <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                    <span class="ladda-label">Thêm mới
-                                    </span>
-                                    <span class="ladda-spinner">
-                                    </span>
-                                    <div class="ladda-progress" style="width: 0px;"></div>
-                                </button>
-                                </a>
-                            </div>    
-                        </div>
-                    </div>
-                    <h4 class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-                        <div>Quản trị tin tức</div>
-                        <div class="col-12 col-md-3 p-0 mb-3">
-                            <input type="text" class="form-control" placeholder="Tìm kiếm...">
-                        </div>
-                    </h4>
-                    <div class="card mb-3">
-                        <div class="card-header pr-0 pl-0">
-                            <div class="row no-gutters align-items-center w-100">
-                                <div class="col font-weight-bold pl-3">Tin sự kiện</div>
-                                <div class="d-none d-md-block col-6 text-muted">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-3">Số lượt đọc</div>
-                                        <div class="col-9">Người cập nhật tin</div>
+                            <div class="main-card mb-3 card">
+                                <div class="card-body"><h5 class="card-title">THÊM MỚI TIN TỨC</h5>
+                                    <div>
+                                    <form method="POST" action="<?=base_url().'admin/quan_tri_tin_tuc/thuc_hien_them_moi_tin_tuc';?>">
+                                        <div class="position-relative row form-group"><label for="exampleEmail" class="col-sm-2 col-form-label">Tiêu đề</label>
+                                            <div class="col-sm-10"><input name="txtTieuDe" class="form-control"></div>
+                                        </div>
+
+                                        <div class="position-relative row form-group"><label for="exampleEmail" class="col-sm-2 col-form-label">Mô tả</label>
+                                            <div class="col-sm-10"><input name="txtMoTa" class="form-control"></div>
+                                        </div>
+
+                                        <div class="position-relative row form-group"><label for="exampleEmail" class="col-sm-2 col-form-label">Nội dung</label>
+                                            <div class="col-sm-10"><input name="txtNoiDung" class="form-control"></div>
+                                        </div>
+
+                                        <div class="position-relative row form-check">
+                                            <div class="col-sm-10 offset-sm-2">
+                                                <button class="btn btn-secondary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <?php foreach ($tin_su_kien as $row1) {
-                        ;?>
-                        <div class="card-body py-3">        
-                            <div class="row no-gutters align-items-center">
-                                <div class="col"><a href="javascript:void(0)" class="text-big font-weight-semibold"><?=$row1->tieu_de;?></a></div>
-                                <div class="d-none d-md-block col-6">        
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-3"><?=$row1->so_luot_doc;?></div>
-                                        <div class="media col-6 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="../assets/images/<?=$row1->anh_minh_hoa;?>" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <a href="javascript:void(0)" class="d-block text-truncate"><?=$row1->tac_gia;?></a>
-                                                <div class="text-muted small text-truncate"><?=$row1->ngay_dang;?></div>
+                        <div class="tab-pane tabs-animation fade" id="tab-content-1" role="tabpanel">
+                            <div class="main-card mb-3 card">
+                                <div class="card-body"><h5 class="card-title">Grid</h5>
+                                    <form class="">
+                                        <div class="position-relative row form-group"><label for="exampleEmail" class="col-sm-2 col-form-label">Email</label>
+                                            <div class="col-sm-10"><input name="email" id="exampleEmail" placeholder="with a placeholder" type="email" class="form-control"></div>
+                                        </div>
+                                        <div class="position-relative row form-group"><label for="examplePassword" class="col-sm-2 col-form-label">Password</label>
+                                            <div class="col-sm-10"><input name="password" id="examplePassword" placeholder="password placeholder" type="password" class="form-control"></div>
+                                        </div>
+                                        <div class="position-relative row form-group"><label for="exampleSelect" class="col-sm-2 col-form-label">Select</label>
+                                            <div class="col-sm-10"><select name="select" id="exampleSelect" class="form-control"></select></div>
+                                        </div>
+                                        <div class="position-relative row form-group"><label for="exampleSelectMulti" class="col-sm-2 col-form-label">Select Multiple</label>
+                                            <div class="col-sm-10"><select multiple="" name="selectMulti" id="exampleSelectMulti" class="form-control"></select></div>
+                                        </div>
+                                        <div class="position-relative row form-group"><label for="exampleText" class="col-sm-2 col-form-label">Text Area</label>
+                                            <div class="col-sm-10"><textarea name="text" id="exampleText" class="form-control"></textarea></div>
+                                        </div>
+                                        <div class="position-relative row form-group"><label for="exampleFile" class="col-sm-2 col-form-label">File</label>
+                                            <div class="col-sm-10"><input name="file" id="exampleFile" type="file" class="form-control-file">
+                                                <small class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
                                             </div>
                                         </div>
-                                    </div>        
-                                </div>
-                            </div>        
-                        </div>
-                        <?php   
-                        }
-                        ;?>
-                    </div>
-        
-                    <div class="card mb-3">
-                        <div class="card-header pl-0 pr-0">
-                            <div class="row w-100 no-gutters align-items-center">
-                                <div class="col font-weight-bold pl-3">Tin công nghệ</div>
-                                <div class="d-none d-md-block col-6 text-muted">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-3">Số lượt đọc</div>
-                                        <div class="col-9">Người cập nhật tin</div>
-                                    </div>
+                                        <fieldset class="position-relative row form-group">
+                                            <legend class="col-form-label col-sm-2">Radio Buttons</legend>
+                                            <div class="col-sm-10">
+                                                <div class="position-relative form-check"><label class="form-check-label"><input name="radio2" type="radio" class="form-check-input"> Option one is this and that—be sure to include why it's great</label></div>
+                                                <div class="position-relative form-check"><label class="form-check-label"><input name="radio2" type="radio" class="form-check-input"> Option two can be something else and selecting it will deselect option
+                                                    one</label></div>
+                                                <div class="position-relative form-check disabled"><label class="form-check-label"><input name="radio2" disabled="" type="radio" class="form-check-input"> Option three is disabled</label></div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="position-relative row form-group"><label for="checkbox2" class="col-sm-2 col-form-label">Checkbox</label>
+                                            <div class="col-sm-10">
+                                                <div class="position-relative form-check"><label class="form-check-label"><input id="checkbox2" type="checkbox" class="form-check-input"> Check me out</label></div>
+                                            </div>
+                                        </div>
+                                        <div class="position-relative row form-check">
+                                            <div class="col-sm-10 offset-sm-2">
+                                                <button class="btn btn-secondary">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
-                        <?php foreach ($tin_cong_nghe as $row2) {
-                        ;?>
-
-                        <div class="card-body py-3">        
-                            <div class="row no-gutters align-items-center">
-                                <div class="col"><a href="javascript:void(0)" class="text-big font-weight-semibold"><?=$row2->tieu_de;?></a></div>
-                                <div class="d-none d-md-block col-6">        
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col-3"><?=$row2->so_luot_doc;?></div>
-                                        <div class="media col-6 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="../assets/images/<?=$row2->anh_minh_hoa;?>" alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-2">
-                                                <a href="javascript:void(0)" class="d-block text-truncate"><?=$row2->tac_gia;?></a>
-                                                <div class="text-muted small text-truncate"><?=$row2->ngay_dang;?></div>
-                                            </div>
-                                        </div>
-                                    </div>    
-                                </div>
-                            </div>        
-                        </div>
-
-                        <?php   
-                        }
-                        ;?>                        
                     </div>
                 </div>
                 <div class="app-wrapper-footer">
@@ -2202,5 +2176,5 @@
         </div>
     </div>
 </div>
-<div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="../assets/scripts/main.87c0748b313a1dda75f5.js"></script></body>
+<div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="<?=base_url();?>assets/scripts/main.87c0748b313a1dda75f5.js"></script></body>
 </html>
