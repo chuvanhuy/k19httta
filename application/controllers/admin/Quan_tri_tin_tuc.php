@@ -14,6 +14,7 @@ class Quan_tri_tin_tuc extends CI_Controller {
 
 		// Kết nối đến MODEL
 		$this->load->model('m_tin_tuc');
+		$this->load->model('m_loai_tin_tuc');
 
 		// Load thư viện session
 		$this->load->library('session');
@@ -39,8 +40,16 @@ class Quan_tri_tin_tuc extends CI_Controller {
 	// Hàm này có tác dụng LOAD ra form nhập liệu
 	public function them_moi_tin_tuc()
 	{
-		// Hiển thị dữ liệu ra view
-		$this->load->view('admin/v_tin_tuc_them_moi');
+		// Lấy danh sách loại tin để hiển thị bên View
+		$data['loai_tin_tuc'] = $this->m_loai_tin_tuc->lay_danh_sach_loai_tin_tuc();
+
+		// Khai báo tiêu đề của trang
+		$data['tieu_de'] = "Thêm mới tin tức | K19HTTTA";
+
+		// Load ra được giao diện quản trị hệ thống
+		$this->load->view('admin/v_header', $data);
+		$this->load->view('admin/v_menu');
+		$this->load->view('admin/v_tin_tuc_them_moi', $data);
 	}
 
 
@@ -62,8 +71,16 @@ class Quan_tri_tin_tuc extends CI_Controller {
 
 		// Lấy thông tin về tin tức thông qua qua MODEL
 		$data['tin_tuc'] = $this->m_tin_tuc->lay_tin_tuc_theo_ID($id);
-	
-		// Hiển thị dữ liệu ra view
+
+		// Lấy danh sách loại tin để hiển thị bên View
+		$data['loai_tin_tuc'] = $this->m_loai_tin_tuc->lay_danh_sach_loai_tin_tuc();
+
+		// Khai báo tiêu đề của trang
+		$data['tieu_de'] = "Sửa tin tức | K19HTTTA";
+
+		// Load ra được giao diện quản trị hệ thống
+		$this->load->view('admin/v_header', $data);
+		$this->load->view('admin/v_menu');
 		$this->load->view('admin/v_tin_tuc_sua', $data);
 	}
 

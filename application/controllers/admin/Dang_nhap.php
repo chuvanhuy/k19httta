@@ -36,11 +36,41 @@ class Dang_nhap extends CI_Controller {
 			// Tạo phiên làm việc (session); mục đích của việc tạo session giúp chúng ta xác minh 1 người có được phép truy cập vào các trang quản trị của chúng ta hay không - đảm bảo tính bảo an?
 			$this->session->set_userdata('email', $email);
 
+			// Thông báo cho người dùng đăng nhập thành công
+			echo 
+			"
+				<script type='text/javascript'>
+					window.alert('Bạn đăng nhập thành công! Chào mừng bạn đến phần quản trị hệ thống');
+				</script>
+			";
+
 			// Chuyển người dùng vào trang quản trị
-			redirect(base_url()."admin/quan_tri_he_thong.html");
+			echo 
+			"
+				<script type='text/javascript'>
+					window.location.href = '".base_url()."admin/quan_tri_he_thong.html'
+				</script>
+			";
+
+			// redirect(base_url()."admin/quan_tri_he_thong.html");
 		} else {
+			// Thông báo cho người dùng đăng nhập không thành công
+			echo 
+			"
+				<script type='text/javascript'>
+					window.alert('Thông tin tài khoản bạn nhập không chính xác. Vui lòng kiểm tra lại.');
+				</script>
+			";
+
 			// Chuyển người dùng ra trang đăng nhập
-			redirect(base_url()."admin/dang_nhap.html");
+			echo 
+			"
+				<script type='text/javascript'>
+					window.location.href = '".base_url()."admin/dang_nhap.html'
+				</script>
+			";
+
+			// redirect(base_url()."admin/dang_nhap.html");
 		}	
 	}
 

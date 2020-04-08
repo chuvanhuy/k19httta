@@ -23,7 +23,12 @@ class Quan_tri_he_thong extends CI_Controller {
 
 	public function index()
 	{
+		// Khai báo tiêu đề của trang
+		$data['tieu_de'] = "Quản trị hệ thống | K19HTTTA";
+
 		// Load ra được giao diện quản trị hệ thống
+		$this->load->view('admin/v_header', $data);
+		$this->load->view('admin/v_menu');
 		$this->load->view('admin/v_quan_tri_he_thong');
 	}
 }
